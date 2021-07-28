@@ -3,27 +3,53 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: calc(90vh - 70px);
   text-align: center;
   font-weight: 700;
   color: #474747;
-  font-size: 7vw;
+  font-size: 15vw;
+}
+
+@media (min-width: 786px) {
+  .not-found-container {
+    font-size: 10vw;
+  }
 }
 
 .not-found-container h1 {
-  font-size: 10vw;
+  font-size: 20vw;
+}
+
+@media (min-width: 786px) {
+  .not-found-container h1 {
+    font-size: 10vw;
+  }
 }
 
 .not-found-container h2 {
-  font-size: 3vw;
+  font-size: 7vw;
+}
+
+@media (min-width: 786px) {
+  .not-found-container h2 {
+    font-size: 3vw;
+  }
 }
 
 .not-found-container a {
   color: white;
-  font-size: 2vw;
   text-decoration: none;
+  font-size: 5vw;
 }
 
-.not-found-container a fa-icon {
-  font-size: 1.5vw;
+@media (min-width: 786px) {
+  .not-found-container a {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 786px) {
+  .not-found-container a fa-icon {
+    font-size: 1.5vw;
+  }
 }
