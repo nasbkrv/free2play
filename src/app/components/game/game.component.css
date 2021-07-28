@@ -1,33 +1,37 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
-.game-thumbnail {
+.game-container {
+  min-height: 100%;
+}
+
+.game-container .game-thumbnail {
   width: 100%;
 }
 
-h1 {
+.game-container h1 {
   color: white;
 }
 
-.info-cell {
+.game-container .info-cell {
   display: flex;
   border-left: 2px solid #adff2f;
   border-radius: 0.3rem;
 }
 
-.title-wrap {
+.game-container .title-wrap {
   display: flex;
 }
 
-.title-wrap .icon-wrap {
+.game-container .title-wrap .icon-wrap {
   position: relative;
   padding: 5px 10px;
 }
 
-.title-wrap .icon-wrap fa-icon:hover + .tooltiptext {
+.game-container .title-wrap .icon-wrap fa-icon:hover + .tooltiptext {
   visibility: visible;
 }
 
-.title-wrap .tooltiptext {
+.game-container .title-wrap .tooltiptext {
   visibility: hidden;
   background-color: #161616;
   color: #fff;
@@ -39,7 +43,7 @@ h1 {
   left: 35px;
 }
 
-.title-wrap .tooltiptext:after, .title-wrap .tooltiptext::after {
+.game-container .title-wrap .tooltiptext:after, .game-container .title-wrap .tooltiptext::after {
   position: absolute;
   top: 5px;
   left: -5px;
@@ -51,11 +55,11 @@ h1 {
   border-top: solid 5px transparent;
 }
 
-.btn-wrap {
+.game-container .btn-wrap {
   position: relative;
 }
 
-.play-now-btn {
+.game-container .play-now-btn {
   border: none;
   border-radius: 4px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
@@ -76,6 +80,6 @@ h1 {
   box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 5px 0px yellowgreen;
 }
 
-.play-now-btn:hover {
+.game-container .play-now-btn:hover {
   background-position: 0% 30%;
 }

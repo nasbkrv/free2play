@@ -32,10 +32,14 @@ export class GamesService {
   }
   getGameByName(name:string):Observable<Game> {
     return this.getGamesApi().pipe(switchMap(games=>{
-      let gameId = games.filter(g=>{
-        return g.title.toLocaleLowerCase() == name.toLocaleLowerCase();
-      })[0].id;
-      return this.http.get<Game>(`${this.singleGameUrl}${gameId}`, httpOptions)
+      try {
+        let gameId = games.filter(g=>{
+          return g.title.toLocaleLowerCase() == name.toLocaleLowerCase();
+        })[0];
+        return this.http.get<Game>(`${this.singleGameUrl}${gameId.id}`, httpOptions)
+      } catch (error) {
+        throw new Error("Game not found")
+      }
     }))
   }
 }

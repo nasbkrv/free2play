@@ -17,6 +17,7 @@ import {
   ConvertToStringPipe,
 } from './pipes/filter.pipe';
 import { FooterComponent } from './components/footer/footer.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './components/footer/footer.component';
     PublisherPipe,
     ConvertToStringPipe,
     FooterComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

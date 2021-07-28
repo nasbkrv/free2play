@@ -1,3 +1,6 @@
+.game-container{
+  min-height: 100%;
+
 .f2p-games-wrap {
   max-height: 900px;
   overflow: scroll;
@@ -85,4 +88,6 @@
       line-height: 5px;
     }
   }
+}
+
 }

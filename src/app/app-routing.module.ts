@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GameComponent } from './components/game/game.component';
 import { GamesComponent } from './components/games/games.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,16 @@ const routes: Routes = [
     component: GamesComponent,
   },
   {
+    path: '404',
+    component: NotFoundComponent,
+  },
+  {
     path: ':name',
     component: GameComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '/404'
   },
 ];
 
