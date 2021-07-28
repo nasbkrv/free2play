@@ -1,0 +1,22 @@
+.f2p-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: 40px;
+  min-height: 70px;
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.f2p-footer p,
+.f2p-footer a {
+  margin-bottom: 0;
+}
+
+.f2p-footer a {
+  color: white;
+  font-weight: 600;
+}

@@ -1,0 +1,21 @@
+<a [routerLink]="[formatParam(game.title)]">
+  <div class="game-thumbnail-wrap" (mouseover)="over()" (mouseout)="out()">
+    <div
+      class="game-thumbnail-overlay"
+      [ngClass]="{
+        'hide-overlay': gameHovered
+      }"
+    >
+      <div class="game-content" [ngStyle]="{ bottom: bottom }">
+        <h3>{{ game.title }}</h3>
+        <span> {{ game.genre }} </span>
+        <span> {{ game.platform }} </span>
+      </div>
+    </div>
+    <img
+      src="{{ game.thumbnail }}"
+      alt="{{ game.title }}"
+      class="game-thumbnail"
+    />
+  </div>
+</a>

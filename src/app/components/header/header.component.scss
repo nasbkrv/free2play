@@ -1,0 +1,13 @@
+.f2p-header {
+  box-shadow: 0px 1px 3px 2px rgba(26, 26, 26, 0.7);
+  &__nav {
+    min-height: 70px;
+    background-color: rgb(26, 26, 26);
+    padding-top: 0;
+    padding-bottom: 0;
+
+    img {
+      max-height: 50px;
+    }
+  }
+}
